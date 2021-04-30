@@ -15,7 +15,7 @@ while True:
         float(height)
         new_height = float(height)
         break
-    # if the user input is not a float or a number, it prompts the user again for a valid input
+    # if the user input is not a float or a number, it prompts the user again for valid input
     except ValueError:
         print("Enter a valid height...")
         height = input("enter your height in m: ")
@@ -26,12 +26,12 @@ weight = input("Please enter your weight in kg: ")
 
 while True:
     # checks if the user input is a float
-    # if it is a float it breaks the while loop and proceeds to the next block of co
+    # if it is a float it breaks the while loop and proceeds to the next block of code
     try:
         float(weight)
         new_weight = float(weight)
         break
-    # if the user input is not a float or a number, it prompts the user again for a valid input
+    # if the user input is not a float or a number, it prompts the user again for valid input
     except ValueError:
         print("Enter a valid weight...")
         weight = input("enter your weight in kg:")
