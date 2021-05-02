@@ -3,10 +3,9 @@ print("####################################################\n"
       "####################################################\n")
 
 # function to check if the user input is valid
-def validate_user_input(var, units):
+def validate_user_input(text):
     while True:
-        value = input('{} in {}: '.format(var, units))
-        print("")
+        value = input('{}: '.format(text))
         try:
             return float(value)
         except ValueError:
@@ -14,13 +13,13 @@ def validate_user_input(var, units):
 
 
 # asks the user for the total bill
-bill = validate_user_input("What was the total bill", "your currency?")
+bill = validate_user_input("What was the total bill?")
 
 # asks the user for the tip
-tip = validate_user_input("What tip would you like to give", "your currency?")
+tip = validate_user_input("What tip would you like to give?")
 
 # asks the user for the amount of people
-total_people = validate_user_input("How many people to split the bill", "numbers?")
+total_people = validate_user_input("How many people to split the bill?")
 
 
 # calculates the total bill
