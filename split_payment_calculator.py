@@ -15,7 +15,7 @@ def validate_user_input(text):
 # asks the user for the total bill
 bill = validate_user_input("What was the total bill?")
 
-# asks the user for the tip
+# asks the user for the tip 
 tip = validate_user_input("What tip would you like to give?")
 
 # asks the user for the amount of people
